@@ -48,6 +48,22 @@ async function copy() {
           @click="copy"
         />
       </div>
+      <div class="flex items-center gap-2">
+        <UButton
+          label="免提"
+          color="primary"
+          variant="outline"
+          target="_blank"
+          @click="pushMobile('S1')"
+        />
+        <UButton
+          label="挂断"
+          color="error"
+          variant="outline"
+          @click="pushMobile('S2')"
+          target="_blank"/>
+      
+      </div>
     </div>
   </UApp>
 </template>

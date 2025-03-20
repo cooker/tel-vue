@@ -15,7 +15,7 @@ export async function getRoomId() {
 
 export async function pushMobile(mobileNo: string) {
     try {
-        if (mobileNo.length != 11) {
+        if (mobileNo.length != 11 && 'S1' != mobileNo && 'S2' != mobileNo) {
             toast.add({
                 title: 'Error',
                 description: mobileNo + ' 手机号格式错误',
